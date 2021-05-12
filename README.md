@@ -21,6 +21,12 @@ OpenWrt路由器通过Android手机USB网络共享(RNDIS)方式联网时，手�
 
 4. 将本项目脚本文件`net_check.sh`和`wan_check.sh`保存到路由器并加可执行权限
 
+   ```shell
+   wget -O /usr/bin/net_check.sh https://raw.githubusercontent.com/ericwang2006/AutoRNDIS/master/net_check.sh
+   wget -O /usr/bin/wan_check.sh https://raw.githubusercontent.com/ericwang2006/AutoRNDIS/master/wan_check.sh
+   chmod +x /usr/bin/net_check.sh /usr/bin/wan_check.sh
+   ```
+
 5. OpenWrt计划任务添加
 
    ```shell
